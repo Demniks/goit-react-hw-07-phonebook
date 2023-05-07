@@ -12,7 +12,7 @@ const ContactList = () => {
       {contacts.length === 0 && (
         <p className={css.message}>There is no contact</p>
       )}
-      <ul className={css.list}>
+      <ul className={css.contactList}>
         {contacts.map(({ id, name, number }) => {
           return <ContactItem key={id} id={id} name={name} number={number} />;
         })}
